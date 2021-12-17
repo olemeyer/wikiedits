@@ -50,8 +50,8 @@ def main():
             out.write(format_meta_data(meta) + "\n")
 
         for (old_edit, new_edit, scores) in edits:
-            out.write(output.format(old=old_edit.encode('utf-8'),
-                      new=new_edit.encode('utf-8'),
+            out.write(output.format(old=old_edit,
+                      new=new_edit,
                       ratio=scores[0],
                       dist=scores[1]))
 
